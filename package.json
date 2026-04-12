@@ -1,0 +1,21 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhijahants-gif/expense-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juhijahants-gif/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/juhijahants-gif/expense-tracker#readme"
+}
