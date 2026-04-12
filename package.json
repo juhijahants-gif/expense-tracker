@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js"
-},
+    "start": "node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juhijahants-gif/expense-tracker.git"
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/juhijahants-gif/expense-tracker/issues"
   },
-  "homepage": "https://github.com/juhijahants-gif/expense-tracker#readme"
+  "homepage": "https://github.com/juhijahants-gif/expense-tracker#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
