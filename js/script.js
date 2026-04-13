@@ -1,4 +1,4 @@
-let transactions = JSON.parse(localStorage.getItem("data")) || [];
+let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 
 function updateUI() {
   const list = document.getElementById("list");
@@ -31,7 +31,7 @@ function updateUI() {
   document.getElementById("expense").innerText = "₹" + Math.abs(expense);
   document.getElementById("balance").innerText = "₹" + (income + expense);
 
-  localStorage.setItem("data", JSON.stringify(transactions));
+  localStorage.setItem("transactions", JSON.stringify(transactions));
 }
 function addTransaction() {
   const desc = document.getElementById("desc").value;
@@ -79,3 +79,12 @@ function goToInsights() {
 }
 
 updateUI();
+function resetData() {
+  const confirmReset = confirm("Are you sure you want to reset all data?");
+
+  if (confirmReset) {
+    localStorage.setItem("transactions", JSON.stringify([])); // ✅ IMPORTANT
+    transactions = []; // reset memory too
+    updateUI(); // refresh UI properly
+  }
+}

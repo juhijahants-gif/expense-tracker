@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monthly & Yearly Analysis</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #222;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>📊 Monthly & Yearly Analysis</h1>
+
+  <div id="yearly" class="card"></div>
+
+  <div id="monthly" class="card"></div>
+
+  <div id="ai" class="card"></div>
+
+  <button onclick="goBack()">⬅ Back</button>
+</div>
+
+<script src="js/analysis.js"></script>
+
+</body>
+</html>

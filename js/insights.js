@@ -1,4 +1,4 @@
-const transactions = JSON.parse(localStorage.getItem("data")) || [];
+const transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 
 // Group by category
 let categoryMap = {};
@@ -55,4 +55,14 @@ document.getElementById("aiText").innerText = insightText;
 
 function goBack() {
   window.location.href = "index.html";
+}
+function resetData() {
+  const confirmReset = confirm("Are you sure you want to reset all data?");
+
+  if (confirmReset) {
+    localStorage.removeItem("transactions");
+    alert("Data reset successfully!");
+
+    location.reload(); // refresh page
+  }
 }
